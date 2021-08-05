@@ -40,7 +40,7 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def message_text(event):
-    print(event.source.group_id)
+    print('group_id of this group:',event.source.group_id)
 
 
 if __name__ == "__main__":
